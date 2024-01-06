@@ -1,0 +1,47 @@
+Space Shooter User Manual
+How to Run the Program:
+Install Python and Pygame on your system.
+Run the main.py file to launch the arcade menu.
+Choose "Play Space Shooter" from the main menu to begin the game.
+Valid Inputs and Expected Outputs:
+Movement: Use the 'Left' and 'Right' arrow keys to move your spaceship horizontally.
+Shooting: Press the 'Space' bar to shoot bullets at incoming enemies.
+Exit: Click the 'Exit' button at the top-right corner to return to the main menu.
+Description of How the Code Works:
+Initialization:
+
+The game initializes Pygame and sets up a window with specific dimensions.
+Defines color schemes and ship, bullet, and enemy properties, including size, speed, and color.
+Game Mechanics:
+
+Player Ship: A spaceship is positioned at the bottom center of the screen, controlled by the player.
+Enemies: Enemy ships spawn at the top and move downwards at a set speed.
+Bullets: When the player presses 'Space', bullets are fired from the ship, moving upwards to hit enemies.
+Collision Detection:
+When a bullet hits an enemy, both the bullet and the enemy are removed from the game.
+If an enemy reaches the bottom of the screen or collides with the player's ship, the game ends.
+Scoring System:
+The player earns points for each enemy hit by bullets.
+The score is displayed at the top left of the screen.
+Game Loop:
+
+The main game loop continually updates the game state based on player inputs and game logic.
+Processes keyboard inputs for moving the ship and shooting.
+Updates positions of bullets and enemies.
+Checks for collisions and updates the score accordingly.
+Renders all game elements (ship, enemies, bullets, score, and exit button) onto the screen.
+Difficulty Increase:
+
+As the player's score increases, the game gradually becomes more challenging by increasing enemy speed.
+User Interface:
+
+Includes an exit button to return to the main menu.
+Game over screen displays when the player loses, with an option to restart the game or exit.
+End of Game:
+
+If the player's ship is hit by an enemy or an enemy reaches the bottom, the game displays a 'Game Over' message.
+Players can choose to play again or return to the main menu.
+Special Notes:
+The game is designed as a single-player experience.
+Player's skill in maneuvering and shooting is key to achieving a high score.
+The game encourages players to beat their previous high scores by increasing the difficulty as they progress.

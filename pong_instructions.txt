@@ -1,0 +1,39 @@
+
+Pong User Manual
+How to Run the Program:
+Ensure Python and Pygame are installed on your system.
+Execute the main.py file to launch the program.
+From the main menu, select "Play Pong" to start the Pong game.
+Valid Inputs and Expected Outputs:
+Player 1 Movement: Use 'W' and 'S' keys to move the left paddle up and down.
+Player 2 Movement: Use the 'Up' and 'Down' arrow keys to move the right paddle up and down.
+Exit: Press the 'Space' bar to return to the main menu.
+Description of How the Code Works:
+Initialization:
+
+The game begins by initializing Pygame and setting up a window with specific dimensions.
+A background image is loaded and scaled to fit the window.
+Paddle and ball properties are defined, including size, color, and speed.
+Game Setup:
+
+Paddles for two players are initialized at specified positions on the screen.
+The ball is initialized at the center of the screen with a random initial direction.
+Gameplay Mechanics:
+
+The game processes keyboard inputs for moving the paddles.
+The ball's movement is updated continuously, bouncing off the top and bottom edges of the screen.
+Collision detection checks if the ball hits either paddle and reverses its direction accordingly.
+Scoring is updated when the ball passes a paddle, indicating a point for the opposing player.
+User Interface:
+
+The game screen is updated regularly to reflect the positions of the paddles and ball.
+The current score for each player is displayed at the top of the screen.
+An exit message ("Press Space to Exit") is shown, allowing players to return to the main menu.
+End of Game:
+
+The game does not have a predefined end point and continues until players choose to exit.
+Exiting the game is handled by pressing the 'Space' bar, which returns the player to the main menu.
+Special Notes:
+The game is designed for two players, each controlling one paddle.
+The speed and direction of the ball change dynamically upon hitting paddles or screen edges.
+The game requires quick reflexes and coordination between players for an engaging experience.

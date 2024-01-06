@@ -1,0 +1,43 @@
+Blackjack User Manual
+How to Run the Program:
+Ensure you have Python and Pygame installed on your system.
+Run the main program file (main.py).
+From the main menu, select "Play Blackjack" to start the game.
+Valid Inputs and Expected Outputs:
+Mouse Clicks: Interact with on-screen buttons like "Hit", "Stand", "Play Again", and "Exit".
+Hit: Draw another card to try and get closer to a total score of 21.
+Stand: End your turn and let the dealer play.
+Play Again: Restart the game after it ends.
+Exit: Return to the main menu.
+Description of How the Code Works:
+Initialization:
+
+The game starts by initializing Pygame and setting up the game window with a specific width and height.
+A background image for the Blackjack table is loaded and scaled to fit the window.
+Global variables for the deck, player's cards, dealer's cards, game over status, and player's turn status are defined.
+Game Setup:
+
+The game deck is created with all suits and ranks using the create_deck function.
+Card images are loaded using load_card_images, which maps each card to its corresponding image.
+The deal_card function is used to draw cards from the deck.
+Gameplay Mechanics:
+
+The reset_game function initializes the game by shuffling the deck and dealing the initial cards.
+Player interaction is handled through clickable buttons. Clicking "Hit" adds a new card to the player's hand, and "Stand" ends the player's turn.
+The player's and dealer's scores are calculated using calculate_score, which also handles the logic for Aces being either 1 or 11.
+The game checks for various end conditions like busts (going over 21) or achieving Blackjack (exactly 21).
+User Interface:
+
+The game continuously checks for player inputs (mouse clicks) and updates the screen accordingly.
+Text is rendered on the screen to display scores and messages using the draw_text function.
+Player and dealer hands are visually represented on the screen using draw_hand.
+The game loop updates the display after every interaction.
+End of Game:
+
+Once the game concludes (either the player stands or busts), the dealer's turn is automatically played following Blackjack rules.
+The winner is determined based on the final scores, and an appropriate message is displayed.
+The "Play Again" button allows restarting the game, while "Exit" returns to the main menu.
+Special Notes:
+The game logic closely follows traditional Blackjack rules.
+The deck is reshuffled at the start of each new game.
+The game is designed for a single player against an automated dealer.
